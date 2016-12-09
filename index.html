@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>todo list</title>
+
+<script language="javascript" type="text/javascript" src="js/tasks.js"></script>
+<script language="javascript" type="text/javascript" src="js/ejs.js"></script>
+<script language="javascript" type="text/javascript" src="js/index.js"></script>
+
+</head>
+
+<input type="button" value="Add" onclick="newRecord();">
+<body onload="bodyOnLoad()">
+
+
+<table id="tblForm" style="display:none;">
+	<tr style="display:none;">
+		<td>ID</td>
+		<td><input type="text" id="txtID"></td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td><input type="text" id="txtDescription"></td>
+	</tr>
+	<tr>
+		<td>Priority</td>
+		<td><input type="text" id="txtPriority"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" value="Save" onclick="saveRecord()"></td>
+	</tr>
+
+</table>
+<hr>
+<div id="divTaskList"></div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+<table width="300" border="1">
+<tr>
+	<td>Description</td>
+	<td>Priority</td>
+	<td>&nbsp;</td>
+</tr>
+<% for(var i=0; i<tasks.length; i++) { %>
+<tr>
+	<td>
+		<a href="javascript:openRecord('<%= tasks[i].Id %>');"><%= tasks[i].Description %></a>
+	</td>
+	<td>
+		<%= tasks[i].Priority %>
+	</td>
+	<td>
+		<a href="javascript:deleteRecord('<%= tasks[i].Id %>');">Delete</a>
+	</td>
+</tr>
+<% } %>
+</table>
+
